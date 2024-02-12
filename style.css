@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.kl{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.nav{
+    width: 100%;
+    background-color: gray;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    height: 80px;
+}
+.nav .logo{
+    font-size: 25px;
+    color: black;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+.nav-menu ul{
+    display: flex;
+    list-style: none;
+}
+.nav-menu ul a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color .4s;
+}
+.nav-menu ul a:hover{
+    color: antiquewhite;
+}
+.header-content{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: calc(100% - 80px);
+    text-align: center;
+}
+.header-content h1{
+    color: antiquewhite;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.header-content p{
+    color: antiquewhite;
+    text-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    margin: 5px 0 40px 0;
+}
+.header-content input[type=button]{
+    padding: 10px 30px;
+    margin: 0 10px;
+    font-size: 18px;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+    background-color: rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: .4s;
+}
+.header-content input[type=button]:hover{
+    background-color: rgba(0,0,0,.5);
+}
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.best-selling {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.shoes #product1 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(product.png);
+}
+.product-item:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.04);
+}
+.product-item {
+    width: 240px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    padding: 16px;
+    padding-top: 26px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--main-transition);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Lora", "Roboto", "Segoe UI", Arial, serif;
+    /* background-color: var(--bg-color); */
+}
+::selection {
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+}
+.product-item a {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 16px;
+    color: var(--first-color);
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.shoes #product2 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(product2.png);
+}
+.shoes #product3 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(product3.png);
+}
+.product-item h1 {
+    color: white;
+    font-size: 2.1rem;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.rich-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20px;
+}
+.nav-list {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+::selection {
+    color: var(--fourth-color);
+    background-color: var(--third-color);
+}
+footer {
+    background-color: #ededee;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+.nav-list li {
+    display: inline-flex;
+}
+li {
+    display: list-item;
+    text-align: match-parent;
+}
+.nav-list li a {
+    padding: 10px 15px;
+    color: inherit;
+}
+a {
+    text-decoration: none;
+}
+a:any-link {
+    color: -webkit-link;
+    cursor: auto;
+}
+.nav-list li a:hover{
+    color: darkblue;
+}
+.Jordan #product1 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(4.png);
+}
+.Jordan #product2 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(5.png);
+}
+.Jordan #product3 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(6.png);
+}
+.force #product1 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(7.png);
+}
+.force #product2 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(8.png);
+}
+.force #product3 {
+    background-image: linear-gradient(
+rgba(30, 30, 30, 0.5),
+rgba(255, 255, 255, 0.4),
+rgba(30, 30, 30, 0.3)
+),
+url(9.png);
+}
+.products-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
